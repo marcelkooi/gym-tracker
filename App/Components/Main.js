@@ -113,7 +113,9 @@ class Main extends React.Component {
   }
 
   fetchDataFromServer(cb) {
-    fetch(`https://www.julian.com/learn/muscle/workouts.json?${Date.now()}`, )
+    // NOTE: This URL was correct but caused issues when redirecting
+    // fetch(`https://www.julian.com/learn/muscle/workouts.json?${Date.now()}`, )
+    fetch(`https://dl.dropboxusercontent.com/s/jbsqf1v6k1gylji/workout.json?`, )
       .then((res) => {
         return res.json();
       })
